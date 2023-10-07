@@ -1,21 +1,18 @@
-import Navbar from './components/Navbar/';
-import Header from './components/Header';
-import AboutUs from './components/AboutUs';
-import Rooms from './components/Rooms';
-import Customers from './components/Customers';
-import Footer from './components/Footer';
+import { Routes, Route } from 'react-router-dom';
+import HomePage from './pages/Home';
+import AboutUsPage from './pages/AboutUs';
+import RoomsPage from './pages/Rooms';
+import CustomersPage from './pages/Customers';
 import './App.css';
 
 function App() {
     return (
-        <>
-            <Navbar />
-            <Header />
-            <AboutUs />
-            <Rooms />
-            <Customers />
-            <Footer />
-        </>
+        <Routes>
+            <Route element={<HomePage />} path="/" />
+            <Route element={<AboutUsPage />} path="/about" />
+            <Route element={<RoomsPage />} path="/rooms" />
+            <Route element={<CustomersPage />} path="/customers" />
+        </Routes>
     );
 }
 
