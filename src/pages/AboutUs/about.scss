@@ -1,0 +1,60 @@
+$primary-black: #000;
+
+.about-us {
+    margin-left: 0;
+    flex-direction: column;
+    align-items: center;
+    .content-wrapper {
+        display: flex;
+    }
+    .carousel-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 700px;
+    }
+}
+.about-us-page-content {
+    flex: 0 1 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 3rem;
+    box-sizing: border-box;
+}
+.about-us-heading {
+}
+
+.small-underline {
+}
+.big-underline {
+}
+.sub-heading {
+}
+.about-us-paragraph {
+    color: $primary-black;
+    align-self: flex-end;
+}
+.about-us-btn {
+}
+.about-us-btn:hover {
+}
+.about-us-btn:hover .btn-arrow {
+}
+.about-us-btn:active {
+}
+.btn-arrow {
+}
+.about-us-images {
+}
+
+.image {
+}
+.image-1 {
+}
+.image-2 {
+}
+.image-3 {
+}
+.image-4 {
+}
