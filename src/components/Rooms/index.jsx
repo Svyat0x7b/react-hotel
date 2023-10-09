@@ -1,10 +1,12 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import singleRoomImg from '../../img/single-room.jpeg';
 import doubleRoomImg from '../../img/double-room.jpeg';
 import luxImg from '../../img/lux.jpeg';
 import vipImg from '../../img/vip.jpeg';
 
 const Rooms = () => {
+    const navigate = useNavigate();
     return (
         <section className="rooms">
             <div className="common-header">
@@ -85,7 +87,9 @@ const Rooms = () => {
                 </div>
             </div>
             <div className="rooms-btn-wrapper">
-                <button className="rooms-btn">Check All Rooms</button>
+                <button className="rooms-btn" onClick={() => navigate('/rooms')}>
+                    Check All Rooms
+                </button>
             </div>
         </section>
     );

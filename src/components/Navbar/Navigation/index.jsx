@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { NAVLINKLIST } from '../../../utils/LinkData';
 
 const Navigation = () => {
     return (
@@ -18,36 +20,13 @@ const Navigation = () => {
                 </form>
             </div>
             <ul className="navigation-list">
-                <li className="navigation-item">
-                    <a href="#" className="navigation-link">
-                        home
-                    </a>
-                </li>
-                <li className="navigation-item">
-                    <a href="#" className="navigation-link">
-                        about us
-                    </a>
-                </li>
-                <li className="navigation-item">
-                    <a href="#" className="navigation-link">
-                        rooms
-                    </a>
-                </li>
-                <li className="navigation-item">
-                    <a href="#" className="navigation-link">
-                        events
-                    </a>
-                </li>
-                <li className="navigation-item">
-                    <a href="#" className="navigation-link">
-                        customers
-                    </a>
-                </li>
-                <li className="navigation-item">
-                    <a href="#" className="navigation-link">
-                        contacts
-                    </a>
-                </li>
+                {NAVLINKLIST.map((link) => (
+                    <li className="navigation-item">
+                        <Link to={link.path} className="navigation-link">
+                            {link.name}
+                        </Link>
+                    </li>
+                ))}
             </ul>
 
             <div className="copyright">

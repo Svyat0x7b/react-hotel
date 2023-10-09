@@ -553,6 +553,7 @@ content: '';
   font-size: 1.4rem;
   text-decoration: none;
   color: #bbb;
+  text-transform: uppercase;
 }
 .contact p {
   font-size: 1.5rem;

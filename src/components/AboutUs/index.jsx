@@ -1,9 +1,11 @@
+import { useNavigate } from 'react-router-dom';
 import firstImg from '../../img/about-us-img-1.jpeg';
 import secondImg from '../../img/about-us-img-2.jpeg';
 import thirdImg from '../../img/about-us-img-3.jpeg';
 import fourthImg from '../../img/about-us-img-4.jpeg';
 
 const AboutUs = () => {
+    const navigate = useNavigate();
     return (
         <section className="about-us">
             <div className="about-us-content">
@@ -22,7 +24,7 @@ const AboutUs = () => {
                     reprehenderit labore. Dolor quis ex laboris nostrud tempor ut eu ut ex
                     exercitation Lorem ipsum elit irure.
                 </p>
-                <button className="about-us-btn">
+                <button className="about-us-btn" onClick={() => navigate('/about')}>
                     Read More
                     <i className="fa-sharp fa-solid fa-angles-right btn-arrow"></i>
                 </button>

@@ -12,7 +12,7 @@ const Header = () => {
             <div className="banner">
                 <h1 className="banner-heading">Welcome to React Hotel</h1>
                 <p className="banner-paragraph">Make your life luxirous</p>
-                <button className="banner-btn">Check Out</button>
+                <button className="banner-btn">Order Room</button>
             </div>
         </header>
     );

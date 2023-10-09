@@ -12,22 +12,26 @@ const Sidebar = () => {
             </label>
             <ul className="social-icons-list">
                 <li>
-                    <a href="#" className="social-link">
-                        <i className="fa-brands fa-facebook-f"></i>
+                    <a
+                        href="https://www.linkedin.com/in/svyatoslav-tsykaliuk-058785292/"
+                        className="social-link">
+                        <i className="fa-brands fa-linkedin"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="#" className="social-link">
-                        <i className="fa-brands fa-twitter"></i>
+                    <a href="https://github.com/Svyat0x7b" className="social-link">
+                        <i className="fa-brands fa-github"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="#" className="social-link">
-                        <i className="fa-brands fa-google-plus-g"></i>
+                    <a href="https://t.me/Svyat3301" className="social-link">
+                        <i className="fa-brands fa-telegram"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="#" className="social-link">
+                    <a
+                        href="https://instagram.com/nikocious_svyat?igshid=OGQ5ZDc2ODk2ZA=="
+                        className="social-link">
                         <i className="fa-brands fa-instagram"></i>
                     </a>
                 </li>

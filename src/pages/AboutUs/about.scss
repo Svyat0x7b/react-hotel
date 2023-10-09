@@ -1,6 +1,7 @@
 $primary-black: #000;
 
-.about-us {
+.about-us-page {
+    background-color: #fff;
     margin-left: 0;
     flex-direction: column;
     align-items: center;
@@ -11,6 +12,7 @@ $primary-black: #000;
         display: flex;
         flex-direction: column;
         width: 700px;
+        margin: 0 auto;
     }
 }
 .about-us-page-content {
@@ -19,7 +21,7 @@ $primary-black: #000;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 2rem 3rem;
+    padding: 2rem 10rem;
     box-sizing: border-box;
 }
 .about-us-heading {

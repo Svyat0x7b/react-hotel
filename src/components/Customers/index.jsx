@@ -1,7 +1,9 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import customer1 from '../../img/customer-1.jpeg';
 
 const Customers = () => {
+    const navigate = useNavigate();
     return (
         <section className="customers">
             <div className="common-header">
@@ -47,6 +49,11 @@ const Customers = () => {
                         </p>
                     </div>
                 </div>
+            </div>
+            <div className="rooms-btn-wrapper">
+                <button className="rooms-btn" onClick={() => navigate('/customers')}>
+                    Check All Reviews
+                </button>
             </div>
         </section>
     );

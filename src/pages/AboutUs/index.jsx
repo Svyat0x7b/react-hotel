@@ -2,6 +2,7 @@ import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer';
 import firstImg from '../../img/about-us-img-1.jpeg';
 import secondImg from '../../img/about-us-img-2.jpeg';
 import thirdImg from '../../img/about-us-img-3.jpeg';
@@ -12,7 +13,7 @@ const AboutUsPage = () => {
     return (
         <>
             <Navbar />
-            <section className="about-us">
+            <section className="about-us-page">
                 <div className="content-wrapper">
                     <div className="about-us-page-content">
                         <h1 className="about-us-heading">About Us</h1>
@@ -74,6 +75,7 @@ const AboutUsPage = () => {
                     </Carousel>
                 </div>
             </section>
+            <Footer />
         </>
     );
 };

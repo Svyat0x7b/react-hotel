@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { HOTELDATA, NAVLINKLIST } from '../../utils/LinkData';
 import gallery1 from '../../img/gallery-img-1.jpeg';
 import gallery2 from '../../img/gallery-img-2.jpeg';
 import gallery3 from '../../img/gallery-img-3.jpeg';
@@ -13,56 +15,25 @@ const Footer = () => {
                 <div className="footer-list-wrapper">
                     <h3 className="footer-heading">React Hotel</h3>
                     <ul className="footer-list">
-                        <li className="footer-list-item">
-                            <a href="#" className="footer-list-link">
-                                support@reacthotel.com
-                            </a>
-                        </li>
-                        <li className="footer-list-item">
-                            <a href="#" className="footer-list-link">
-                                New York, Main Street 123
-                            </a>
-                        </li>
-                        <li className="footer-list-item">
-                            <a href="#" className="footer-list-link">
-                                Tel: +123 456 789
-                            </a>
-                        </li>
+                        {HOTELDATA.map((link) => (
+                            <li className="footer-list-item">
+                                <a to={link.url} className="footer-list-link">
+                                    {link.title}
+                                </a>
+                            </li>
+                        ))}
                     </ul>
                 </div>
                 <div className="footer-list-wrapper">
                     <h3 className="footer-heading">Explore</h3>
                     <ul className="footer-list">
-                        <li className="footer-list-item">
-                            <a href="#" className="footer-list-link">
-                                Home
-                            </a>
-                        </li>
-                        <li className="footer-list-item">
-                            <a href="#" className="footer-list-link">
-                                About Us
-                            </a>
-                        </li>
-                        <li className="footer-list-item">
-                            <a href="#" className="footer-list-link">
-                                Rooms
-                            </a>
-                        </li>
-                        <li className="footer-list-item">
-                            <a href="#" className="footer-list-link">
-                                Events
-                            </a>
-                        </li>
-                        <li className="footer-list-item">
-                            <a href="#" className="footer-list-link">
-                                Customers
-                            </a>
-                        </li>
-                        <li className="footer-list-item">
-                            <a href="#" className="footer-list-link">
-                                Contact
-                            </a>
-                        </li>
+                        {NAVLINKLIST.map((link) => (
+                            <li className="footer-list-item">
+                                <Link to={link.path} className="footer-list-link">
+                                    {link.name}
+                                </Link>
+                            </li>
+                        ))}
                     </ul>
                 </div>
                 <div className="contact">
